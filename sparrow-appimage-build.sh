@@ -54,7 +54,7 @@ Type=Application
 Name=Sparrow Wallet
 Icon=Sparrow
 Exec=AppRun
-Comment=Financial self soverignty
+Comment=Financial self sovereignty
 Categories=Finance;Office;
 Terminal=false' > Sparrow.desktop
 
