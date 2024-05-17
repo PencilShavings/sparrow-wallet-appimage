@@ -4,7 +4,7 @@ WORKDIR="/tmp/sparrow-wallet-appimage-${RANDOM}"
 mkdir -v ${WORKDIR}
 cd ${WORKDIR}
 
-VERSION='1.8.4'
+VERSION='1.9.1'
 APPDIR='Sparrow.AppDir'
 TARFILE="sparrow-${VERSION}-x86_64.tar.gz"
 
@@ -22,7 +22,7 @@ curl -L -O "https://github.com/sparrowwallet/sparrow/releases/download/${VERSION
 # Validate Download
 # curl -L -O "https://github.com/sparrowwallet/sparrow/releases/download/${VERSION}/sparrow-${VERSION}-manifest.txt.asc"
 curl -L -O "https://github.com/sparrowwallet/sparrow/releases/download/${VERSION}/sparrow-${VERSION}-manifest.txt"
-sha256sum --check sparrow-1.8.4-manifest.txt --ignore-missing
+sha256sum --check sparrow-${VERSION}-manifest.txt --ignore-missing
 
 if [ "$?" = "0" ]; then
     echo "Checksum PASSED"
